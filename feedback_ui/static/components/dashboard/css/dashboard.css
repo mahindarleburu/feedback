@@ -1,0 +1,23 @@
+.dashboard-header{
+    width: 100%;
+    height:100%;
+    background-color: #0c3b2e; 
+    color: #ffffff;
+    padding: 1px 10px 10px 10px;
+}
+
+
+.menu-list{
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	right: 10%;
+}
+
+.ul-style{
+	list-style: none;
+	display:flex;
+	flex-direction: row;
+	cursor: pointer;
+	font-size: 17px;
+}

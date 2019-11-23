@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" ng-app="feedbackApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback App</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+	<div ui-view="headerView"></div>
+    <div ui-view="maincontent"></div>
+
+
+<!-- Css Files -->
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/common.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/helper.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'components/home/css/home.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'components/dashboard/css/dashboard.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'components/profile/css/profile.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'components/scoreboard/css/scoreboard.css'%}">
+
+
+
+<!-- Library Files -->
+<script src="{% static 'assets/js/node_modules/angular/angular.min.js'%}"></script>
+<script src="{% static 'assets/js/node_modules/angular-ui-router/release/angular-ui-router.min.js'%}"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+
+<!--Project Files-->
+<script src="{% static 'components/app.js'%}"></script>
+<script src="{% static 'components/home/app.home.js'%}"></script>
+<script src="{% static 'components/dashboard/app.dashboard.js'%}"></script>
+<script src="{% static 'components/profile/app.profile.js'%}"></script>
+<script src="{% static 'components/scoreboard/app.scoreboard.js'%}"></script>
+<script src="{% static 'components/home/controllers/homeController.js'%}"></script>
+<script src="{% static 'components/dashboard/controllers/dashboardController.js'%}"></script>
+<script src="{% static 'components/profile/controllers/profileController.js'%}"></script>
+<script src="{% static 'components/scoreboard/controllers/scoreboardController.js'%}"></script>
+
+
+</body>
+</html>
